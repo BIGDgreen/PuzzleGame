@@ -1,0 +1,214 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+html,body{
+	height: 100%;
+	min-height: 100%;
+}
+
+#wrap{
+	height: 100%;
+	min-height: 100%;
+}
+
+/*********************************功能区***********************************/
+#funcarea{
+	height: 100%;
+	width: 70px;
+	float: left;
+	position:fixed;
+	background:#339966;
+	color: white;
+	border-right:2px solid black;
+	z-index: 1000;
+}
+
+.time{
+	text-align: center;
+	margin-top:160px;
+}
+
+
+.btn{
+	display: inline-block;
+	width:60px;
+	height: 40px;
+	margin-top:10px;
+	margin-left: 4px;
+	color: white;
+	border:1.5px solid black;
+	text-align: center;
+	border-radius: .25rem;
+	font-size: 1rem;
+}
+
+.btn.focus, .btn:focus {
+	box-shadow: none;
+}
+
+.btn:hover{
+	background:rgba(255,255,255,0.66);
+	color: #339966;
+}
+
+#start:disabled{
+	opacity: 0.5;
+	color: white;
+	background:none; 
+}
+
+#sound{
+	background: none;
+	background-image: url(images/音效.png);
+	width: 40px;
+	height: 40px;
+	margin-top: 20px;
+	margin-left: 10px;
+	background-size:100%;
+}
+
+#sound:focus{
+	border:0;
+	outline: none;
+}
+
+/********************************mn输入框**********************************/
+.input-group{
+    width:100px;
+	float: left;
+	margin: 10px;
+}
+
+.mm{
+	margin-left: 100px;
+}
+
+.input-group-text{
+	color:#fff;
+	background: #339966;
+	border:#000 1px solid;
+}
+
+.form-control{
+	border-color:#000;
+}
+
+#yes{
+	border:1px solid black;
+	border-radius: 4px;
+	background-color: #339966;
+	color: white;
+	width:50px;
+	height: 30px;
+	margin-top:15px;
+}
+
+#yes:focus,.form-control:focus{
+    border-color:#339966;
+    -webkit-box-shadow: inset 0 1px 1px rgba(51,153,102,0.75);
+    box-shadow: inset 0px 1px 1px rgba(51,153,102,0.75);
+}
+
+#yes:focus{
+	background-color: white;
+	color: #339966;
+	outline: none;
+}
+
+#yes:disabled{
+	background-color: #999;
+}
+
+/*********************************游戏区***********************************/
+
+#input{
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+}
+
+#title{
+	position: absolute;
+	top:0;
+	margin-top:10px;
+	margin-left:420px;
+	width: 180px;
+	height: 42px;
+}
+
+#main{
+	margin: 0 100px;
+	width: 800px;
+	height: 500px;
+	border:2px solid #000;
+	border-radius: 4px;
+	background: none;
+}
+
+.upbtn{
+	text-align: center;
+	position: relative;
+	top:40%;
+}
+
+.upload{
+	background: none;
+	border:none;
+	width:100px;
+	height: 100px;
+	background-size:100%;
+}
+
+#picture,.picture{
+	width:798px;
+	margin-top:-101px;
+	margin-left:-1px;
+	border:none;
+}
+
+/************参考线*************/
+#demoTable {
+	margin-top:-498px;
+	border-collapse: collapse;
+	width: 798px;
+	height: 498px;
+	text-align: center;
+	border: none;
+}
+.cell {
+	border: 1px dashed #999999;
+	border-top: none;
+	border-left: none;
+}
+.mcell {
+	border-bottom: none;
+}
+.ncell {
+	border-right: none;
+}
+.mncell {
+	border-bottom: none;
+	border-right: none;
+}
+
+/*************图片碎片*************/
+#fragments{
+	margin-top:-500px;
+	margin-left: -2px;
+	width: 798px;
+	height: 498px;
+}
+
+#fragTable{
+	width: 798px;
+	height: 498px;
+	border-collapse: separate;
+}
+
+#storagePlace{
+	width: 100%;
+	height: 100%;
+}
